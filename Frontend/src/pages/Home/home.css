@@ -1,0 +1,37 @@
+.Home_Home {
+  display: flex;
+}
+.sidebar_sidebar {
+  flex: 2;
+}
+.main_note__note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.note_display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home_navbar {
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 999;
+  padding-bottom: 10px;
+}
+.Home_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 20px;
+  flex: 7;
+}
+
+.all_notes_notes {
+  margin: 40px 0px;
+  text-align: center;
+}

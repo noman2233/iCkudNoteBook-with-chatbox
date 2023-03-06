@@ -1,0 +1,87 @@
+.single_note_card_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.note__note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 340px;
+}
+.single_note_card {
+  position: relative;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+}
+.single_note_card_title {
+  margin: 50px 0px 20px 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.single_note_card_desc {
+  font-size: 14px;
+  color: rgb(39, 36, 36);
+  font-weight: 400;
+}
+.single_note_card_tag {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.single_read_all {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 0px 20px;
+}
+.single_public_public {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  background-color: rgb(12, 50, 17);
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  border-radius: 10px;
+  padding: 5px 15px;
+  width: 60px;
+  top: 0px;
+  left: 10px;
+}
+
+.buttons_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+.edit_button {
+  color: white;
+  background-color: green;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.delete_button {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(159, 12, 12);
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}

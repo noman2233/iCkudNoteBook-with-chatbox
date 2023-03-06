@@ -1,0 +1,266 @@
+.main__chatcontent {
+  flex-grow: 1;
+  padding: 20px 40px;
+  max-width: 63%;
+  border-right: 1px solid #ebe7fb;
+
+  flex-direction: column;
+}
+.content__header {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.current-chatting-user {
+  display: flex;
+  align-items: center;
+}
+.enjoy_chats_logo {
+  position: relative;
+}
+.sidebar_sidebar {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.send_____icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnSendMsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current-chatting-user p {
+  margin: 0;
+  font-weight: 600;
+}
+.content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings .btn-nobg {
+  color: #000;
+}
+.content__body {
+  max-height: calc(100vh - calc(100vh / 2));
+  overflow: auto;
+  height: 70vh;
+  position: relative;
+  border: 1px solid rgb(222, 221, 221);
+}
+.noConversationText {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 150px;
+  width: 100%;
+}
+.chat__item {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  transform-origin: right;
+  animation-name: showIn;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.88, 0.19, 0.37, 1.11);
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+.enjoy_chats_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@keyframes showIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.chat__item {
+  display: flex;
+
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.chat__item .avatar {
+  margin: 0px 13px;
+  background: #fff;
+  padding: 1px;
+}
+.chat__item__content {
+  background-color: #4462ff;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px 10px 0 10px;
+  width: 250px;
+  margin: 10px 0px;
+}
+.chat__item__content .chat__meta {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 10px;
+  color: black;
+}
+.logo_chats_friends {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 30px;
+}
+.chat__item__content .chat__meta span {
+  font-size: 10px;
+  color: #1e202d;
+  user-select: none;
+}
+.chat__msg {
+  user-select: none;
+  font-size: 11px;
+  font-weight: 500;
+}
+.sennnn____see {
+  font-size: 10px;
+}
+.last_______seen {
+  font-size: 10px;
+}
+.chat__item.other {
+  flex-direction: row-reverse;
+  transform-origin: left;
+}
+.chat__item.other .chat__item__content {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px 10px 10px 0;
+  max-width: 50%;
+}
+.chat__item.other .avatar {
+  margin-right: 20px;
+  margin-left: 0px;
+}
+.chat__item.other .chat__item__content .chat__meta span {
+  color: #aaa7a7;
+  font-size: 10px;
+}
+.image_sent_received {
+  width: 80px;
+  height: 89px;
+  object-fit: cover;
+  margin: 0px 10px;
+}
+.content__footer {
+  padding-top: 30px;
+}
+.sendNewMessage {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+}
+.sendNewMessage button {
+  width: 36px;
+  height: 36px;
+  background-color: #ecefff;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #4665ff;
+  padding: 0;
+  border-radius: 5px;
+  line-height: 36px;
+  transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+}
+.sendNewMessage button:hover {
+  transform: scale(1.2);
+}
+.sendNewMessage button i {
+  display: block;
+}
+.sendNewMessage input {
+  flex-grow: 1;
+  padding: 0 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+#sendMsgBtn {
+  background-color: #3b5bfe;
+  color: #fff;
+}
+.logout_fire {
+  padding: 8px 10px;
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
+  margin: 0px 10px;
+  border: 2px solid balck;
+}
+@media only screen and (max-width: 600px) {
+  .enjoy_chats_logo {
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo_chats_friends h5 {
+    font-size: 10px;
+    width: 100px;
+    margin: 0px 24px;
+  }
+  .avatar-img {
+    width: 40px;
+  }
+  .message {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .owner {
+    flex-direction: row-reverse;
+  }
+  .messageInfo {
+    display: flex;
+    align-items: center;
+  }
+  .chatting-user {
+    font-size: 12px;
+    font: bolder;
+    text-transform: capitalize;
+  }
+  .image_photo_photes {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .sendNewMessage input {
+    font-size: 10px;
+    width: fit-content;
+  }
+  .content__body {
+    width: 250px;
+    margin: 10px 0px;
+  }
+  .sendNewMessage {
+    width: fit-content;
+  }
+  .main__chatcontent {
+    width: 300px;
+  }
+}

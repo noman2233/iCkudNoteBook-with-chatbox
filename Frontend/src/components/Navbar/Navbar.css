@@ -1,0 +1,174 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 47px 0px;
+  position: sticky;
+  top: 0;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+.left {
+}
+.cat {
+}
+.cat ul {
+  display: flex;
+  align-items: center;
+}
+.cat ul li {
+  list-style: none;
+  padding: 0px 20px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+.cat ul a {
+  text-decoration: none;
+}
+.search_input_search {
+  padding: 7px;
+  width: 300px;
+  border-radius: 5px;
+  outline-color: none;
+  border: transparent;
+}
+.dark_mode {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 30%;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+.light_mode {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 30%;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+.switch {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+}
+.search_input_search:focus {
+  outline: none;
+}
+.center {
+  margin: 0px 40px;
+}
+.logo {
+  width: 50px;
+  height: 60px;
+  object-fit: cover;
+}
+a .logo {
+  text-decoration: none;
+  color: black;
+}
+
+.right_nav {
+  display: flex;
+  align-items: center;
+  margin: 0px 30px;
+  padding: 10px 0px;
+}
+.pages {
+  display: flex;
+  align-items: center;
+}
+.pages ul {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.pages ul li {
+  list-style: none;
+  padding: 0px 20px;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+.logo_____logo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.pages_navabr ul li a {
+  text-decoration: none;
+  font-size: 13px;
+}
+.shopping_icon {
+  position: relative;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.login_button {
+  background-color: #016dcb;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  border: 2px solid rgb(156, 155, 155);
+  padding: 0px 5px;
+}
+.logo_mode {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .searchbar {
+    display: none;
+  }
+  .logo {
+    width: 30px;
+    object-fit: cover;
+    margin: 0px 20px;
+  }
+  .pages ul li {
+    list-style: none;
+    padding: 0px 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .login_button {
+    background-color: #016dcb;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 5px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .logo_____logo {
+    width: 40px;
+    object-fit: cover;
+  }
+
+}

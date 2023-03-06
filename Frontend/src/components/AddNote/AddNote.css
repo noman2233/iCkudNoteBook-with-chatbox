@@ -1,0 +1,21 @@
+.form__input {
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  outline: none;
+  padding: 30 15px;
+  border: 1px solid#CACACA;
+}
+.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input_textarea {
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  outline: none;
+  padding: 30 15px;
+  border: 1px solid#CACACA;
+}

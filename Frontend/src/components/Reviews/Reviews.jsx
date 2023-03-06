@@ -1,0 +1,72 @@
+
+import axios from "axios";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import React from "react";
+import Review from "../Review/Review";
+import "../Review/comments.css";
+const Reviews = ({ noteId }) => {
+  const queryClient = useQueryClient();
+  const { isLoading, error, data } = useQuery({
+    queryKey: ["reviews"],
+    queryFn: () =>
+      axios.get(`/reviews/${noteId}`).then((res) => {
+        return res.data;
+      }),
+  });
+
+  const mutation = useMutation({
+    mutationFn: (review) => {
+      return axios.post("/reviews", review);
+    },
+    onSuccess: () => {
+      if(localStorage.getItem("access_token")){
+        queryClient.invalidateQueries(["reviews"]);
+
+      }
+    },
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const desc = e.target[0].value;
+    const star = e.target[1].value;
+    mutation.mutate({ noteId, desc, star });
+  };
+
+  return (
+    <div className="comment__input_input">
+        <div className="add">
+          <h3>Add a review</h3>
+          <form action="" className="addForm" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="write your opinion"
+              className="comment__input"
+            />
+            <select name="" id="" className="starrrr_____numb">
+              <option value={1}>1</option>
+              <option value={2}>2</option>
+              <option value={3}>3</option>
+              <option value={4}>4</option>
+              <option value={5}>5</option>
+            </select>
+            <button type="submit" className="send___button">
+              Add
+            </button>
+          </form>
+        </div>
+        <h4 className="allllllll_review_heading">All Reviews Below</h4>
+
+      <div className="reviews">
+        {isLoading
+          ? "loading"
+          : error
+          ? "Something went wrong!"
+          : data.map((review) => <Review key={review._id} review={review} />)}
+      </div>
+    </div>
+  );
+};
+
+export default Reviews;
+

@@ -1,0 +1,74 @@
+.single_notepage {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  /* display: flex; */
+  align-items: center;
+  width: fit-content;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  cursor: pointer;
+  width: 600px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 0px;
+}
+small {
+  color: rgb(73, 71, 71);
+  font-size: 15px;
+}
+.single_note_page_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-top: 30px;
+}
+
+.complate_note {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.single_note_page_desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 10px 0px;
+}
+.notepage_box {
+  position: absolute;
+  top: -10px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.complete_____note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.allllllll_review_heading {
+  text-align: justify;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .single_notepage {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .single_notepage {
+    width: 300px;
+  }
+}
